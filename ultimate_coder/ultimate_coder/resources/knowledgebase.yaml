@@ -1,0 +1,15 @@
+clean_code:
+  description: Clean Code book
+  url: https://www.oreilly.com/library/view/clean-code/9780136083238/
+ddia:
+  description: Designing Data-Intensive Applications
+  url: https://dataintensive.net/
+sicp:
+  description: Structure and Interpretation of Computer Programs
+  url: https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/
+advent_of_code:
+  description: Advent of Code puzzles
+  url: https://adventofcode.com/
+codewars:
+  description: Codewars kata practice
+  url: https://www.codewars.com/

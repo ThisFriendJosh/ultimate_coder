@@ -24,6 +24,17 @@ A 26‑week, weekly‑sprint program to level up from Novice → Principal by **
 
 See `docs/syllabus.md` and `ultimate_coder.yaml` for the canonical program spec.
 
+
+## Knowledgebase CLI
+
+Use `scripts/uc-kb` to browse a curated list of learning resources stored in `ultimate_coder/resources/knowledgebase.yaml`.
+
+```bash
+./scripts/uc-kb list        # show all entries
+./scripts/uc-kb search term # search descriptions and keys
+./scripts/uc-kb open key    # open the URL in a browser
+```
+
 ## Scripts
 
 The repository includes helper scripts under `scripts/`.
@@ -37,3 +48,4 @@ scripts/uc-open-pr.sh <branch-name> <source-file> <commit-message> [destination]
 ```
 
 The optional `destination` argument controls where the file is copied inside the repository (defaults to the basename of the source file).
+
