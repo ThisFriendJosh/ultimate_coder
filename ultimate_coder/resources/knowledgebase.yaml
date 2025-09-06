@@ -1,6 +1,8 @@
+--
 cs:
   - title: "Structure and Interpretation of Computer Programs"
-    link: "https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/"
+    link: "https://mitpress.mit.edu/9780262510875/
+    structure-and-interpretation-of-computer-programs/"
     note: "Foundational CS concepts via Scheme."
 languages:
   - title: "Python Official Docs"
