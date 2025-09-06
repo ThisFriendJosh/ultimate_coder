@@ -1,0 +1,16 @@
+do_something_extra:
+  trigger: "on_task_complete"
+  actions:
+    - type: "reflection"
+      prompt: "Summarize what was done, and identify one insight or lesson learned."
+    - type: "expansion"
+      prompt: "Suggest a next step, deeper exploration, or creative extension of the completed task."
+    - type: "bonus_output"
+      options:
+        - "Generate an alternative solution or variation"
+        - "Offer a practical real-world application"
+        - "Add a fun/creative twist (e.g., analogy, story, or diagram)"
+  guardrails:
+    - "Keep extra concise (max 200 words or 1 artifact)."
+    - "Must be relevant to the just-finished task."
+    - "Never overwrite or block the main deliverable."
