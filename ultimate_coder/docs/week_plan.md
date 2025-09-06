@@ -1,6 +1,6 @@
 # Weekly Plan Template
  
-+## Sections##
++## Sections
  - Objectives
  - Key readings
  - Build tasks
@@ -12,7 +12,7 @@
  - Demo & retro
 +- Retrospective notes
 +
-+## Example: Algorithms sprint##
++## Example: Algorithms sprint
 +Aligned module: **CS Fundamentals – Algorithms** (see `ultimate_coder.yaml`).
 +- Objectives: Build the "Schedule optimizer" using sorting and dynamic programming.
 +- Key readings: CLRS chapters on sorting and dynamic programming; internal notes on scheduling.
@@ -25,7 +25,7 @@
 +- Demo & retro: Show scheduler on real data; reflect on algorithm choices.
 +- Retrospective notes: Capture insights on optimization and future refactors.
 +
-+## Example: DevOps sprint##
++## Example: DevOps sprint
 +Aligned module: **DevOps – Git→CI/CD** (see `ultimate_coder.yaml`).
 +- Objectives: Wire up repository with basic CI pipeline to automate build and tests.
 +- Key readings: Docs on Git hooks and CI platforms (e.g., GitHub Actions).
