@@ -1,30 +1,57 @@
---
-cs:
-  - title: "Structure and Interpretation of Computer Programs"
-    link: "https://mitpress.mit.edu/9780262510875/
-    structure-and-interpretation-of-computer-programs/"
-    note: "Foundational CS concepts via Scheme."
-languages:
-  - title: "Python Official Docs"
-    link: "https://docs.python.org/3/"
-    note: "Comprehensive guide to Python."
-systems:
-  - title: "Operating Systems: Three Easy Pieces"
-    link: "https://pages.cs.wisc.edu/~remzi/OSTEP/"
-    note: "Free textbook on OS principles."
-devops:
-  - title: "Kubernetes Documentation"
-    link: "https://kubernetes.io/docs/home/"
-    note: "Container orchestration and cluster management."
-data:
-  - title: "Designing Data-Intensive Applications"
-    link: "https://dataintensive.net/"
-    note: "Patterns for scalable data systems."
-craft:
-  - title: "Clean Code"
-    link: "https://www.informit.com/articles/article.aspx?p=1216151"
-    note: "Guidelines for writing clean, maintainable code."
-advanced:
-  - title: "Distributed Systems For Fun and Profit"
-    link: "http://book.mixu.net/distsys/"
-    note: "Approachable guide to distributed systems."
+---
+knowledgebase:
+  cs_fundamentals:
+    - "MIT OCW 6.006 / 6.046 / 6.033"
+    - "OpenDSA (interactive DS/A)"
+    - "Algorithms Illuminated (Skiena)"
+
+  languages:
+    python:
+      - "Fluent Python (Ramalho)"
+      - "Real Python tutorials"
+      - "Exercism tracks"
+    rust:
+      - "Rustlings"
+      - "Rustonomicon"
+    go:
+      - "A Tour of Go (official)"
+    java:
+      - "Effective Java (Bloch)"
+      - "JetBrains Academy Java track"
+
+  systems_architecture:
+    - "Stanford CS140e (OS in Rust)"
+    - "Designing Data-Intensive Applications (DDIA)"
+    - "12 Factor App"
+    - "Ghidra Docs"
+
+  devops_reliability:
+    - "Google SRE Book + Workbook"
+    - "Kubernetes the Hard Way (Hightower)"
+    - "Docker Deep Dive (Poulton)"
+    - "HashiCorp Learn (Terraform, Vault)"
+
+  data_ai:
+    - "fast.ai Practical Deep Learning"
+    - "Hands-On ML (Aurélien Géron)"
+    - "Andrew Ng ML Specialization"
+    - "MITRE SP!CE v1.0 & v2.2"
+    - "OpenAI Cookbook"
+
+  software_craft_career:
+    - "Clean Architecture (Robert Martin)"
+    - "Refactoring (Fowler) + Refactoring.Guru"
+    - "The Pragmatic Programmer (Hunt & Thomas)"
+    - "Advent of Code (archives)"
+
+  advanced_optional:
+    reverse_engineering:
+      - "Practical Malware Analysis"
+      - "Binary Ninja / Radare2 tutorials"
+    graphics_simulation:
+      - "Game Engine Architecture (Jason Gregory)"
+      - "Three.js Fundamentals"
+    security:
+      - "OWASP Top 10"
+      - "Threat Modeling (Adam Shostack)"
+      - "Web Security Academy (PortSwigger)"
