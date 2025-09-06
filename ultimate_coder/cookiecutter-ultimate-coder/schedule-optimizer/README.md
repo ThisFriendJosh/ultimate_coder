@@ -1,3 +1,12 @@
+
 # Schedule Optimizer
 
-Scaffold for schedule-optimizer.
+Example scheduler that orders tasks by duration.
+
+## Usage
+
+```bash
+pip install -r requirements.txt
+pytest
+python -m schedule_optimizer.main
+```
