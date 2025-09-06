@@ -3,111 +3,231 @@ ultimate_coder:
   meta:
     version: 1.0
     owner: "YOUR_NAME"
-    cadence: weekly_sprints
+    cadence: "weekly_sprints"
     duration_weeks: 26
-    levels: [Novice, Apprentice, Journeyman, 
-		Senior, Principal]
-    hours_per_week: 12-20
-    philosophy: ["Learn by building",
-		 "Feedback loops", "Depth→breadth"]
-    ethics: ["Privacy-by-design",
-		 "Security-first", "License compliance"]
-  prerequisites:
-    skills: ["Shell + editor",
-		 "Algebra + logic"]
-    env:
-      os: [Linux, macOS, WSL2]
-      tools:
-        - {name: Python, ver: "3.13", 
-				local_pkg: "/mnt/data/python-3.13.7-macos11.pkg"}
-        - {name: OpenJDK, ver: "26-ea", 
-				local_tar: "/mnt/data/openjdk-26-ea+14_linux-x64_bin.tar.gz"}
-        - {name: Editor, opts: ["VSCode", "NPP"], 
-				npp_zip: "/mnt/data/npp.8.8.5.portable.x64.zip"}
-        - {name: Ghidra, opt: true, zip:
-				 "/mnt/data/ghidra-master.zip"}
-  outcomes:
-    core: ["Code in 2+ langs", 
-		"Build APIs/services", "Algo reasoning",
-		 "Ship w/ CI/CD", "AI-assisted dev"]
-    artifacts: ["Portfolio repo", "Tech notes", "3 showcase projects"]
-  tracks:
-    - id: cs
-      title: CS Fundamentals
-      modules:
-        - {name: "DS & Complexity", 
-				weeks: 2, skills: [Big-O, graphs], proj: "Implement DS + BFS/DFS", resources: [cs_fundamentals]}
-        - {name: "Algorithms", weeks: 2, 
-				skills: [sort, DP], proj: "Schedule optimizer", 
-				resources: [algorithms]}
-    - id: langs
-      title: Language Mastery
-      modules:
-        - {name: "Python Deep Dive", 
-				weeks: 2, proj: "CLI data tool", 
-				resources: [languages.python]}
-        - {name: "Systems Lang", weeks: 3, 
-				opts: [Rust, Go, Java], proj: "Perf service", 
-				resources: [languages.systems_lang]}
-    - id: systems
-      title: Systems & Arch
-      modules:
-        - {name: "APIs", weeks: 2, proj:
-				 "Prod REST API", resources: [systems.apis]}
-        - {name: "Perf/Obs", weeks: 2, proj: "Profile + fix bottlenecks", resources: [systems.perf_obs]}
-    - id: devops
-      title: DevOps
-      modules:
-        - {name: "Git→CI/CD", weeks: 1, 
-				resources: [devops.git_ci_cd]}
-        - {name: "Containers", weeks: 2, 
-				proj: "Blue/green deploy", resources: [devops.containers]}
-    - id: data_ai
-      title: Data & AI
-      modules:
-        - {name: "Data Pipes", weeks: 1, 
-				resources: [data_ai.data_pipes]}
-        - {name: "ML", weeks: 2, 
-				proj: "Tabular model", resources: [data_ai.ml]}
-        - {name: "AI-in-loop", weeks: 1, 
-				resources: [data_ai.ai_in_loop]}
-  sprints: {d1: plan, d2_3: build, 
-	d4: harden, d5: review}
-  assessments:
-    apprentice: ["Algo proj ≥80", "Python proj typed + 90% tests"]
-    journeyman: ["Service w/ CI/CD", "Threat model fixed"]
-    senior: ["Lead 2w team proj", "Deliver tech talk"]
-  capstones:
-    - {name: Full-stack, brief: "API+worker+UI w/ SLOs"}
-    - {name: AI Toolkit, brief: "CLI/VSCode ext for tests+perf"}
-  resources:
-    books: ["SICP", "DDIA", "Clean Code"]
-    katas: ["Advent of Code", "Codewars"]
-    tooling: ["linters", "formatters", "Mermaid"]
-    cs_fundamentals: ["CS50", "Grokking Algorithms", "SICP", "CS:APP"]
-    algorithms: ["CLRS", "AlgoExpert"]
-    languages:
-      python: ["Official Python Tutorial", "Fluent Python"]
-      systems_lang: ["Rust Book", "The Go Programming Language"]
-      rust: ["The Rust Programming Language"]
-      go: ["The Go Programming Language"]
-      java: ["Effective Java"]
-    systems:
-      apis: ["RESTful API Design", "APIs You Won't Hate"]
-      perf_obs: ["Systems Performance", "Distributed Tracing"]
-    devops:
-      git_ci_cd: ["Pro Git", "CI/CD Best Practices"]
-      containers: ["Docker Docs", "Kubernetes Basics"]
-      general: ["The Phoenix Project", "Kubernetes Up & Running"]
-    data_ai:
-      data_pipes: ["Data Engineering on Azure", "Airflow Docs"]
-      ml: ["scikit-learn Guide", "Hands-On ML"]
-      ai_in_loop: ["Human-in-the-Loop AI", "AI Safety Handbook"]
-      general: ["Hands-On Machine Learning", "Deep Learning"]
-    systems_architecture: ["Designing Data-Intensive Applications", "Clean Architecture"]
-    craft_career: ["Clean Code", "The Pragmatic Programmer"]
-    advanced_optional:
-      reverse_engineering: ["Practical Reverse Engineering"]
-      graphics_simulation: ["Real-Time Rendering"]
-      security: ["Web Application Hacker's Handbook"]
+    target_levels: ["Novice", "Apprentice", "Journeyman", "Senior", "Principal"]
+    time_commitment_per_week_hours: 12-20
+    philosophy:
+      - "Learn by building. Master by teaching."
+      - "Tight feedback loops: code → test → review → ship."
+      - "Depth first on essentials; breadth via guided projects."
+    ethics:
+      - "Privacy-by-design"
+      - "Security as a first-class feature"
+      - "Attribution & license compliance"
 
+  prerequisites:
+    baseline_skills:
+      - "Comfortable with a shell and a text editor"
+      - "Algebra, discrete basics (sets, graphs, logic)"
+    environment:
+      os: ["Linux", "macOS", "WSL2"]
+      toolchain:
+        - name: "Python 3.13"
+          hint: "/mnt/data/python-3.13.7-macos11.pkg"
+        - name: "OpenJDK (26-ea acceptable)"
+          hint: "/mnt/data/openjdk-26-ea+14_linux-x64_bin.tar.gz"
+        - name: "Editor"
+          options: ["VS Code", "Notepad++ portable"]
+          hint: "/mnt/data/npp.8.8.5.portable.x64.zip"
+        - name: "Reverse Engineering Lab (optional)"
+          note: "Use for systems & security track labs (Ghidra)"
+          hint: "/mnt/data/ghidra-master.zip"
+
+  outcomes:
+    core:
+      - "Write clean, tested code in 2+ languages (Python + one systems or typed language)"
+      - "Design, implement, and profile non-trivial systems (APIs, services, CLIs)"
+      - "Reason about algorithms, complexity, and data structures in practice"
+      - "Ship production-quality software with CI/CD, observability, and docs"
+      - "Model & solve problems with AI tooling responsibly"
+    artifacts:
+      - "Public portfolio repo"
+      - "Technical blog/notes"
+      - "Three showcase projects (algorithms, systems, product/UX)"
+
+  tracks:
+    - id: cs_fundamentals
+      title: "CS Fundamentals"
+      goals:
+        - "Algorithmic thinking, asymptotics, DS mastery"
+      modules:
+        - name: "Complexity & Data Structures"
+          weeks: 2
+          skills: ["Big-O", "arrays", "hash tables", "trees", "graphs", "heaps"]
+          exercises:
+            - "Implement: dynamic array, hashmap with open addressing"
+            - "Graph: BFS/DFS, Dijkstra; compare with A* on grid"
+          assessment:
+            rubric:
+              correctness: 40
+              complexity_justification: 25
+              tests_coverage: 20
+              readability: 15
+        - name: "Algorithms in the Wild"
+          weeks: 2
+          skills: ["sorting families", "divide & conquer", "greedy vs DP"]
+          project: "Schedule optimizer (interval scheduling + knapsack variant)"
+
+    - id: languages
+      title: "Language Mastery"
+      goals:
+        - "Pythonic fluency + one compiled/typed language"
+      modules:
+        - name: "Python 3.13 Deep Dive"
+          weeks: 2
+          skills: ["typing", "asyncio", "packaging", "pytest", "mypy"]
+          project: "CLI data tool with plug-in architecture"
+        - name: "Systems Language"
+          options: ["Rust", "Go", "Java (with OpenJDK)"]
+          weeks: 3
+          skills:
+            - "ownership/borrowing (Rust)"
+            - "goroutines (Go)"
+            - "JVM basics (Java)"
+          project: "High-performance service or CLI; benchmark vs Python"
+
+    - id: systems_engineering
+      title: "Systems & Architecture"
+      goals:
+        - "Design, profile, observe, and scale services"
+      modules:
+        - name: "APIs & Contracts"
+          weeks: 2
+          skills: ["REST/JSON", "OpenAPI", "FastAPI/Spring/Go-chi", "rate limiting"]
+          project: "Production-grade service with OpenAPI + auth"
+        - name: "Performance & Observability"
+          weeks: 2
+          skills: ["profilers", "tracing", "metrics", "log structuring"]
+          exercise: "Find & fix 3 perf bottlenecks; write postmortem"
+        - name: "Security Foundations"
+          weeks: 1
+          skills: ["threat modeling", "OWASP Top 10", "secrets hygiene"]
+          optional_lab:
+            title: "Binary 101 + Ghidra"
+            note: "Static inspection, call graphs, symbol tables"
+
+    - id: devops_tooling
+      title: "DevOps & Reliability"
+      modules:
+        - name: "Git to CI/CD"
+          weeks: 1
+          skills: ["branching strategies", "lint/test/build", "semver", "release notes"]
+        - name: "Containers & Cloud"
+          weeks: 2
+          skills: ["Dockerfiles", "compose", "K8s basics", "IaC hints"]
+          project: "Blue/green deploy of the systems project"
+
+    - id: data_ai
+      title: "Data & AI Literacy"
+      modules:
+        - name: "Data Pipelines"
+          weeks: 1
+          skills: ["parsing", "formats", "SQL basics", "pandas/Arrow"]
+        - name: "Practical ML"
+          weeks: 2
+          skills: ["feature thinking", "train/val/test", "leakage", "baseline models"]
+          project: "Small tabular model + evaluation report"
+        - name: "AI-in-the-loop Coding"
+          weeks: 1
+          skills: ["prompt patterns", "code review via LLMs", "unit-test synthesis"]
+          guardrails:
+            - "Never paste secrets"
+            - "Always run & test generated code"
+
+    - id: product_ux
+      title: "Product, UX, & Communication"
+      modules:
+        - name: "Spec → Ship"
+          weeks: 1
+          skills: ["PRDs", "acceptance criteria", "user stories"]
+        - name: "Docs & Demos"
+          weeks: 1
+          skills: ["README-driven dev", "demo scripts", "diagrams-as-code"]
+
+  weekly_sprint_template:
+    day_1:
+      plan: "Define sprint goal, write acceptance tests first"
+    day_2_3:
+      build: "Implement thin vertical slice"
+    day_4:
+      hardening: ["profiling", "add missing tests", "docs pass"]
+    day_5:
+      review: ["peer review checklist", "demo", "retrospective"]
+
+  rituals:
+    code_review_checklist:
+      - "Small PRs (<400 LOC)"
+      - "Clear intent in title/body"
+      - "Tests cover happy & edge paths"
+      - "No secret leakage; licenses respected"
+    testing_pyramid:
+      unit: "fast & focused"
+      integration: "service edges & contracts"
+      e2e: "critical paths only"
+
+  assessments:
+    gates:
+      apprentice:
+        requirements:
+          - "DS/Algo project passes rubric ≥80"
+          - "Python project: 90% unit coverage; typed"
+      journeyman:
+        requirements:
+          - "Systems service with CI/CD, observability, load test report"
+          - "Security review: threat model + fixes merged"
+      senior:
+        requirements:
+          - "Lead a 2-week team project; ship to prod-like env"
+          - "Write & deliver a tech talk or tutorial"
+
+  capstones:
+    - name: "Full-stack Systems Capstone"
+      brief: "Design, build, and operate a resilient API + worker + UI"
+      constraints:
+        - "SLOs: 99.9% over 7 days (simulated)"
+        - "Blue/green deploys with rollback"
+        - "Dashboards: latency, errors, saturation"
+      deliverables:
+        - "Design doc"
+        - "Repo with CI/CD"
+        - "Runbook & postmortem"
+    - name: "AI-Assisted Developer Toolkit"
+      brief: "CLI or VSCode extension that generates tests, perf hints, or refactors"
+      safeguards:
+        - "No code exfiltration"
+        - "Deterministic cache for prompts/outputs"
+
+  resources:
+    books:
+      - "Structure and Interpretation of Computer Programs"
+      - "Designing Data-Intensive Applications"
+      - "Clean Code (with modern critiques)"
+    katas:
+      - "Advent of Code (selected)"
+      - "Codewars/LeetCode (targeted, not grind)"
+    tooling_basics:
+      linters: ["ruff", "flake8", "golangci-lint", "checkstyle"]
+      formatters: ["black", "gofmt", "prettier"]
+      diagramming: ["Mermaid", "PlantUML"]
+
+  portfolio_map:
+    sections:
+      - "Algorithms & DS"
+      - "Systems & DevOps"
+      - "Security Notes"
+      - "Data & AI"
+      - "Talks & Teaching"
+    quality_bar:
+      - "Reproducible README"
+      - "One-click run (container or script)"
+      - "Benchmarks and tests visible"
+
+  extensions_optional:
+    security_reverse_engineering:
+      labs:
+        - "ELF/PE anatomy overview (Ghidra)"
+        - "Static vs dynamic analysis primer"
+      ethics_note: "Only analyze binaries you own or have permission to study."
+    graphics_or_mobile:
+      options: ["WebGL/Three.js", "Android/iOS starter"]
