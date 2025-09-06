@@ -178,6 +178,17 @@ ultimate_coder:
       systems_lang:
         - "Rust Book"
         - "The Go Programming Language"
+    books: ["SICP", "DDIA", "Clean Code"]
+    katas: ["Advent of Code", "Codewars"]
+    tooling: ["linters", "formatters", "Mermaid"]
+    cs_fundamentals: ["CS50", "Grokking Algorithms", "SICP", "CS:APP"]
+    algorithms: ["CLRS", "AlgoExpert"]
+    languages:
+      python: ["Official Python Tutorial", "Fluent Python"]
+      systems_lang: ["Rust Book", "The Go Programming Language"]
+      rust: ["The Rust Programming Language"]
+      go: ["The Go Programming Language"]
+      java: ["Effective Java"]
     systems:
       apis:
         - "RESTful API Design"
@@ -226,6 +237,16 @@ ultimate_coder:
     craft_career:
       - "Clean Code"
       - "The Pragmatic Programmer"
+      git_ci_cd: ["Pro Git", "CI/CD Best Practices"]
+      containers: ["Docker Docs", "Kubernetes Basics"]
+      general: ["The Phoenix Project", "Kubernetes Up & Running"]
+    data_ai:
+      data_pipes: ["Data Engineering on Azure", "Airflow Docs"]
+      ml: ["scikit-learn Guide", "Hands-On ML"]
+      ai_in_loop: ["Human-in-the-Loop AI", "AI Safety Handbook"]
+      general: ["Hands-On Machine Learning", "Deep Learning"]
+    systems_architecture: ["Designing Data-Intensive Applications", "Clean Architecture"]
+    craft_career: ["Clean Code", "The Pragmatic Programmer"]
     advanced_optional:
       reverse_engineering:
         - "Practical Reverse Engineering"

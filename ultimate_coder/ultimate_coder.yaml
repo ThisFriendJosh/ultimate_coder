@@ -24,12 +24,15 @@ ultimate_coder:
     - id: cs
       title: CS Fundamentals
       modules:
-        - {name: "DS & Complexity", weeks: 2, skills: [Big-O, graphs], proj: "Implement DS + BFS/DFS", resources: [cs_fundamentals]}
-        - {name: "Algorithms", weeks: 2, skills: [sort, DP], proj: "Schedule optimizer", resources: [algorithms]}
+        - {name: "DS & Complexity", weeks: 2, skills: [Big-O, graphs],
+        proj: "Implement DS + BFS/DFS", resources: [cs_fundamentals]}
+        - {name: "Algorithms", weeks: 2, skills: [sort, DP],
+        proj: "Schedule optimizer", resources: [algorithms]}
     - id: langs
       title: Language Mastery
       modules:
-        - {name: "Python Deep Dive", weeks: 2, proj: "CLI data tool", resources: [languages.python]}
+        - {name: "Python Deep Dive", weeks: 2,
+        proj: "CLI data tool", resources: [languages.python]}
         - {name: "Systems Lang", weeks: 3, opts: [Rust, Go, Java], proj: "Perf service", resources: [languages.systems_lang]}
     - id: systems
       title: Systems & Arch
@@ -59,28 +62,36 @@ ultimate_coder:
     books: ["SICP", "DDIA", "Clean Code"]
     katas: ["Advent of Code", "Codewars"]
     tooling: ["linters", "formatters", "Mermaid"]
-    cs_fundamentals: ["CS50", "Grokking Algorithms"]
+    cs_fundamentals: ["CS50", "Grokking Algorithms", "SICP", "CS:APP"]
     algorithms: ["CLRS", "AlgoExpert"]
     languages:
       python: ["Official Python Tutorial", "Fluent Python"]
       systems_lang: ["Rust Book", "The Go Programming Language"]
+      rust: ["The Rust Programming Language"]
+      go: ["The Go Programming Language"]
+      java: ["Effective Java"]
     systems:
       apis: ["RESTful API Design", "APIs You Won't Hate"]
       perf_obs: ["Systems Performance", "Distributed Tracing"]
     devops:
       git_ci_cd: ["Pro Git", "CI/CD Best Practices"]
-      containers: ["Docker Docs", "Kubernetes Basics"]
+      containers: ["Docker Docs", "Kubernetes Basics", "Kubernetes Up & Running"]
+      general: ["The Phoenix Project"]
     data_ai:
       data_pipes: ["Data Engineering on Azure", "Airflow Docs"]
       ml: ["scikit-learn Guide", "Hands-On ML"]
       ai_in_loop: ["Human-in-the-Loop AI", "AI Safety Handbook"]
-    cs_fundamentals: ["SICP", "CS:APP"]
     languages:
       python: ["Fluent Python"]
       rust: ["The Rust Programming Language"]
       go: ["The Go Programming Language"]
       java: ["Effective Java"]
+
+      general: ["Hands-On Machine Learning", "Deep Learning"]
+    cs_fundamentals: ["SICP", "CS:APP"]
+
     systems_architecture: ["Designing Data-Intensive Applications", "Clean Architecture"]
+
     devops: ["The Phoenix Project", "Kubernetes Up & Running"]
     data_ai: ["Hands-On Machine Learning", "Deep Learning"]
     craft_career: ["Clean Code", "The Pragmatic Programmer"]
