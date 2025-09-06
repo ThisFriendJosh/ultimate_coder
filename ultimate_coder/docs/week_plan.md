@@ -1,10 +1,4 @@
- (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
-diff --git a/ultimate_coder/docs/week_plan.md b/ultimate_coder/docs/week_plan.md
-index a35b8e3b5ebeae42fe91db1713630a4460082606..8978530e2528ecc066df4507d6979a34c83536d6 100644
---- a/ultimate_coder/docs/week_plan.md
-+++ b/ultimate_coder/docs/week_plan.md
-@@ -1,8 +1,39 @@
- # Weekly Plan Template
+# Weekly Plan Template
  
 +## Sections
  - Objectives
