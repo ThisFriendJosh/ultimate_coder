@@ -69,7 +69,8 @@ ultimate_coder:
       perf_obs: ["Systems Performance", "Distributed Tracing"]
     devops:
       git_ci_cd: ["Pro Git", "CI/CD Best Practices"]
-      containers: ["Docker Docs", "Kubernetes Basics"]
+      containers: ["Docker Docs", "Kubernetes Basics", "Kubernetes Up & Running"]
+      general: ["The Phoenix Project"]
     data_ai:
       data_pipes: ["Data Engineering on Azure", "Airflow Docs"]
       ml: ["scikit-learn Guide", "Hands-On ML"]
@@ -82,7 +83,9 @@ ultimate_coder:
       go: ["The Go Programming Language"]
       java: ["Effective Java"]
     systems_architecture: ["Designing Data-Intensive Applications", "Clean Architecture"]
+
     devops: ["The Phoenix Project", "Kubernetes Up & Running"]
+    data_ai: ["Hands-On Machine Learning", "Deep Learning"]
     craft_career: ["Clean Code", "The Pragmatic Programmer"]
     advanced_optional:
       reverse_engineering: ["Practical Reverse Engineering"]
