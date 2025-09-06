@@ -23,3 +23,17 @@ A 26‑week, weekly‑sprint program to level up from Novice → Principal by **
 - Threat model + fixes
 
 See `docs/syllabus.md` and `ultimate_coder.yaml` for the canonical program spec.
+
+## Scripts
+
+The repository includes helper scripts under `scripts/`.
+
+### `uc-open-pr.sh`
+
+Creates a branch, copies a file into the repo, commits, pushes, and (if the `gh` CLI is installed) opens a pull request.
+
+```bash
+scripts/uc-open-pr.sh <branch-name> <source-file> <commit-message> [destination]
+```
+
+The optional `destination` argument controls where the file is copied inside the repository (defaults to the basename of the source file).
