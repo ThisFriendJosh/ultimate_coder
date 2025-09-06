@@ -1,0 +1,116 @@
+---
+ultimate_coder:
+  meta:
+    version: 1.0
+    owner: "YOUR_NAME"
+    cadence: weekly_sprints
+    duration_weeks: 26
+    levels: [Novice, Apprentice, Journeyman, 
+		Senior, Principal]
+    hours_per_week: 12-20
+    philosophy: ["Learn by building",
+		 "Feedback loops", "Depth→breadth"]
+    ethics: ["Privacy-by-design",
+		 "Security-first", "License compliance"]
+  prerequisites:
+    skills: ["Shell + editor",
+		 "Algebra + logic"]
+    env:
+      os: [Linux, macOS, WSL2]
+      tools:
+        - {name: Python, ver: "3.13", 
+				local_pkg: "/mnt/data/python-3.13.7-macos11.pkg"}
+        - {name: OpenJDK, ver: "26-ea", 
+				local_tar: "/mnt/data/openjdk-26-ea+14_linux-x64_bin.tar.gz"}
+        - {name: Editor, opts: ["VSCode", "NPP"], 
+				npp_zip: "/mnt/data/npp.8.8.5.portable.x64.zip"}
+        - {name: Ghidra, opt: true, zip:
+				 "/mnt/data/ghidra-master.zip"}
+  outcomes:
+    core: ["Code in 2+ langs", 
+		"Build APIs/services", "Algo reasoning",
+		 "Ship w/ CI/CD", "AI-assisted dev"]
+    artifacts: ["Portfolio repo", "Tech notes", "3 showcase projects"]
+  tracks:
+    - id: cs
+      title: CS Fundamentals
+      modules:
+        - {name: "DS & Complexity", 
+				weeks: 2, skills: [Big-O, graphs], proj: "Implement DS + BFS/DFS", resources: [cs_fundamentals]}
+        - {name: "Algorithms", weeks: 2, 
+				skills: [sort, DP], proj: "Schedule optimizer", 
+				resources: [algorithms]}
+    - id: langs
+      title: Language Mastery
+      modules:
+        - {name: "Python Deep Dive", 
+				weeks: 2, proj: "CLI data tool", 
+				resources: [languages.python]}
+        - {name: "Systems Lang", weeks: 3, 
+				opts: [Rust, Go, Java], proj: "Perf service", 
+				resources: [languages.systems_lang]}
+    - id: systems
+      title: Systems & Arch
+      modules:
+        - {name: "APIs", weeks: 2, proj:
+				 "Prod REST API", resources: [systems.apis]}
+        - {name: "Perf/Obs", weeks: 2, proj: "Profile + fix bottlenecks", resources: [systems.perf_obs]}
+    - id: devops
+      title: DevOps
+      modules:
+        - {name: "Git→CI/CD", weeks: 1, 
+				resources: [devops.git_ci_cd]}
+        - {name: "Containers", weeks: 2, 
+				proj: "Blue/green deploy", resources: [devops.containers]}
+    - id: data_ai
+      title: Data & AI
+      modules:
+        - {name: "Data Pipes", weeks: 1, 
+				resources: [data_ai.data_pipes]}
+        - {name: "ML", weeks: 2, 
+				proj: "Tabular model", resources: [data_ai.ml]}
+        - {name: "AI-in-loop", weeks: 1, 
+				resources: [data_ai.ai_in_loop]}
+  sprints: {d1: plan, d2_3: build, 
+	d4: harden, d5: review}
+  assessments:
+    apprentice: ["Algo proj ≥80", "Python proj typed + 90% tests"]
+    journeyman: ["Service w/ CI/CD", "Threat model fixed"]
+    senior: ["Lead 2w team proj", "Deliver tech talk"]
+  capstones:
+    - {name: Full-stack, brief: "API+worker+UI w/ SLOs"}
+    - {name: AI Toolkit, brief: "CLI/VSCode ext for tests+perf"}
+  resources:
+    books: ["SICP", "DDIA", "Clean Code"]
+    katas: ["Advent of Code", "Codewars"]
+    tooling: ["linters", "formatters", "Mermaid"]
+    cs_fundamentals: ["CS50", "Grokking Algorithms"]
+    algorithms: ["CLRS", "AlgoExpert"]
+    languages:
+      python: ["Official Python Tutorial", "Fluent Python"]
+      systems_lang: ["Rust Book", "The Go Programming Language"]
+    systems:
+      apis: ["RESTful API Design", "APIs You Won't Hate"]
+      perf_obs: ["Systems Performance", "Distributed Tracing"]
+    devops:
+      git_ci_cd: ["Pro Git", "CI/CD Best Practices"]
+      containers: ["Docker Docs", "Kubernetes Basics"]
+    data_ai:
+      data_pipes: ["Data Engineering on Azure", "Airflow Docs"]
+      ml: ["scikit-learn Guide", "Hands-On ML"]
+      ai_in_loop: ["Human-in-the-Loop AI", "AI Safety Handbook"]
+    cs_fundamentals: ["SICP", "CS:APP"]
+    languages:
+      python: ["Fluent Python"]
+      rust: ["The Rust Programming Language"]
+      go: ["The Go Programming Language"]
+      java: ["Effective Java"]
+    systems_architecture: ["Designing Data-Intensive Applications", "Clean Architecture"]
+    devops: ["The Phoenix Project", "Kubernetes Up & Running"]
+    data_ai: ["Hands-On Machine Learning", "Deep Learning"]
+    craft_career: ["Clean Code", "The Pragmatic Programmer"]
+    advanced_optional:
+      reverse_engineering: ["Practical Reverse Engineering"]
+      graphics_simulation: ["Real-Time Rendering"]
+      security: ["Web Application Hacker's Handbook"]
+
