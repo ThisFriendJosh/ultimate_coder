@@ -59,7 +59,7 @@ ultimate_coder:
     books: ["SICP", "DDIA", "Clean Code"]
     katas: ["Advent of Code", "Codewars"]
     tooling: ["linters", "formatters", "Mermaid"]
-    cs_fundamentals: ["CS50", "Grokking Algorithms"]
+    cs_fundamentals: ["CS50", "Grokking Algorithms", "SICP", "CS:APP"]
     algorithms: ["CLRS", "AlgoExpert"]
     languages:
       python: ["Official Python Tutorial", "Fluent Python"]
@@ -74,7 +74,6 @@ ultimate_coder:
       data_pipes: ["Data Engineering on Azure", "Airflow Docs"]
       ml: ["scikit-learn Guide", "Hands-On ML"]
       ai_in_loop: ["Human-in-the-Loop AI", "AI Safety Handbook"]
-    cs_fundamentals: ["SICP", "CS:APP"]
     languages:
       python: ["Fluent Python"]
       rust: ["The Rust Programming Language"]
