@@ -1,5 +1,5 @@
 ---
-name: Validate Knowledgebase
+name: Validate YAML
 
 on:
   pull_request:
@@ -16,5 +16,5 @@ jobs:
           python-version: '3.x'
       - name: Install yamllint
         run: pip install yamllint
-      - name: Validate knowledgebase.yaml
-        run: yamllint ultimate_coder/resources/knowledgebase.yaml
+      - name: Validate YAML files
+        run: yamllint Codertext.yaml.txt ultimate_coder/resources/knowledgebase.yaml
