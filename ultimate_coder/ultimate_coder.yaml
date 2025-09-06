@@ -56,6 +56,17 @@ ultimate_coder:
     - {name: Full-stack, brief: "API+worker+UI w/ SLOs"}
     - {name: AI Toolkit, brief: "CLI/VSCode ext for tests+perf"}
   resources:
-    books: ["SICP", "DDIA", "Clean Code"]
-    katas: ["Advent of Code", "Codewars"]
-    tooling: ["linters", "formatters", "Mermaid"]
+    cs_fundamentals: ["SICP", "CS:APP"]
+    languages:
+      python: ["Fluent Python"]
+      rust: ["The Rust Programming Language"]
+      go: ["The Go Programming Language"]
+      java: ["Effective Java"]
+    systems_architecture: ["Designing Data-Intensive Applications", "Clean Architecture"]
+    devops: ["The Phoenix Project", "Kubernetes Up & Running"]
+    data_ai: ["Hands-On Machine Learning", "Deep Learning"]
+    craft_career: ["Clean Code", "The Pragmatic Programmer"]
+    advanced_optional:
+      reverse_engineering: ["Practical Reverse Engineering"]
+      graphics_simulation: ["Real-Time Rendering"]
+      security: ["Web Application Hacker's Handbook"]
