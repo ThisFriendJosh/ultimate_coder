@@ -1,0 +1,28 @@
+cs:
+  - title: "Structure and Interpretation of Computer Programs"
+    link: "https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/"
+    note: "Foundational CS concepts via Scheme."
+languages:
+  - title: "Python Official Docs"
+    link: "https://docs.python.org/3/"
+    note: "Comprehensive guide to Python."
+systems:
+  - title: "Operating Systems: Three Easy Pieces"
+    link: "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+    note: "Free textbook on OS principles."
+devops:
+  - title: "Kubernetes Documentation"
+    link: "https://kubernetes.io/docs/home/"
+    note: "Container orchestration and cluster management."
+data:
+  - title: "Designing Data-Intensive Applications"
+    link: "https://dataintensive.net/"
+    note: "Patterns for scalable data systems."
+craft:
+  - title: "Clean Code"
+    link: "https://www.informit.com/articles/article.aspx?p=1216151"
+    note: "Guidelines for writing clean, maintainable code."
+advanced:
+  - title: "Distributed Systems For Fun and Profit"
+    link: "http://book.mixu.net/distsys/"
+    note: "Approachable guide to distributed systems."
