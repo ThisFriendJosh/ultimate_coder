@@ -64,6 +64,9 @@ ultimate_coder:
     languages:
       python: ["Official Python Tutorial", "Fluent Python"]
       systems_lang: ["Rust Book", "The Go Programming Language"]
+      rust: ["The Rust Programming Language"]
+      go: ["The Go Programming Language"]
+      java: ["Effective Java"]
     systems:
       apis: ["RESTful API Design", "APIs You Won't Hate"]
       perf_obs: ["Systems Performance", "Distributed Tracing"]
@@ -75,11 +78,6 @@ ultimate_coder:
       ml: ["scikit-learn Guide", "Hands-On ML"]
       ai_in_loop: ["Human-in-the-Loop AI", "AI Safety Handbook"]
     cs_fundamentals: ["SICP", "CS:APP"]
-    languages:
-      python: ["Fluent Python"]
-      rust: ["The Rust Programming Language"]
-      go: ["The Go Programming Language"]
-      java: ["Effective Java"]
     systems_architecture: ["Designing Data-Intensive Applications", "Clean Architecture"]
     devops: ["The Phoenix Project", "Kubernetes Up & Running"]
     data_ai: ["Hands-On Machine Learning", "Deep Learning"]
